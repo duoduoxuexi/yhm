@@ -3,46 +3,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>yhm</title>
+    <title>贪吃豆</title>
     <style>  
-      body {
-        margin: 0;
-      }
+      .dot-up {
+  background-color: #7d4ffd;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  animation: eat-haha-up 1s infinite;
+  transform-origin: center bottom;
+}
+
+.dot-down {
+  background-color: #7d4ffd;
+  width: 100px;
+  height: 50px;
+  border-radius: 0 0 50px 50px;
+  animation: eat-haha-down 1s infinite;
+  transform-origin: center top;
+}
+
+@keyframes eat-haha-up {
+  0% {
+    transform: rotate(0)
+  }
+
+  25% {
+    transform: rotate(-45deg)
+  }
+
+  50% {
+    transform: rotate(0)
+  }
+
+  75% {
+    transform: rotate(-45deg)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+}
+
+@keyframes eat-haha-down {
+  0% {
+    transform: rotate(0)
+  }
+
+  25% {
+    transform: rotate(45deg)
+  }
+
+  50% {
+    transform: rotate(0)
+  }
+
+  75% {
+    transform: rotate(45deg)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+}
     </style>
   </head>
   <body>
-    <div style="
-     background-color: #f1f1f1;
-     text-align: center;
-     padding: 30px;
-    ">
-      <img style="border-radius: 100px;"src='https://s1.328888.xyz/2022/08/02/OLhRs.jpg' alt="yhm" width="80px" height="80px" >
-    </div>
-    <div style="
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 15px;
-      line-height: 1.7;
-      border-width: 2px;
-border-style: dashed;
-border-color: grey;
-"
-    >
-    <p>你好，欢迎来到我的网站，恭喜你发现的宝藏。“妈保男”——妈呀，宝藏男孩！</p>
-    <p>这里记录自己制作的第一个网站，内容很简单。虽然是第一次学，但是的确没有想象中的那么难🐶如果你也有兴趣制作自己的网站可以来和我探讨哦！
-    </p>
-    <p>我的爱好和特长有很多，掌握一些电脑基础知识，擅长Ps、Ai、Pr等软件的安装与卸载精通CSS、C＋＋、Java、python、Word、Excel、Powerpoint等单词的拼写，熟悉Windows、Android、IOS等系统的开关机，如果你也有此方面的兴趣，欢迎交流。当然如果你有遇到一些电脑问题的话，我也非常乐意帮助解答。</p>
-    <p>如果你觉得还不错的话可以点击下方链接，可以V我50请我吃肯德基，哈哈哈</p>
-    <p>未完待续......</p>
-    </div>
-    <div style="
-     background-color: #f1f1f1;
-     text-align: center;
-     padding: 30px;
-     font-size: 12px
-    ">
-    <p>关于我的v1.0</p>
-    <a href="https://s1.328888.xyz/2022/08/02/OLXxh.jpg">友情链接</a>
-    </div>
+   <div>
+  <div class="dot-up">
+  </div>
+  <div class="dot-down">
+  </div>
+</div>
   </body>
 </html>
